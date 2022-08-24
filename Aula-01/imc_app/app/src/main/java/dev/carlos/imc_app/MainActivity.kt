@@ -23,14 +23,15 @@ class MainActivity : AppCompatActivity() {
             val peso = pesoValue.text.toString()
             val altura = alturaValue.text.toString()
 
-            if(pesoValue.text.isEmpty() && alturaValue.text.isEmpty()){
+            if(!pesoValue.text.isEmpty() && !alturaValue.text.isEmpty()){
+                val imc = peso.toDouble() / (altura.toDouble() * altura.toDouble())
+                val imcFormatado = (imc * 1000.0).roundToInt() / 1000.0
+                resultado.setText("IMC: " + imcFormatado)
+            } else {
                 resultado.setText("Por favor preencha todos os campos")
             }
 
-            val imc = peso.toDouble() / (altura.toDouble() * altura.toDouble())
 
-            val imcFormatado = (imc * 1000.0).roundToInt() / 1000.0
-            resultado.setText("IMC: " + imcFormatado)
         }
     }
 }
