@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
                 resultado.setText("Por favor preencha todos os campos")
             }
 
-
         }
     }
 }
