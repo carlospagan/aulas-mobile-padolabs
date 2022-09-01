@@ -3,6 +3,7 @@ package dev.carlos.digitallockapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.google.android.material.appbar.MaterialToolbar
@@ -15,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         val mainToolBar = findViewById<MaterialToolbar>(R.id.mainToolBar)
         mainToolBar.setNavigationOnClickListener{
             Toast.makeText(this,"Hamburguer Pressionado!!!",Toast.LENGTH_SHORT).show()
+        }
+
+        val homeImg = findViewById<ImageView>(R.id.home)
+        homeImg.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         val fde600wCard = findViewById<CardView>(R.id.fde600wCard)

@@ -1,7 +1,9 @@
 package dev.carlos.digitallockapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.android.material.appbar.MaterialToolbar
 
@@ -11,6 +13,11 @@ class Fde300wPage : AppCompatActivity() {
         setContentView(R.layout.activity_fde300w_page)
 
         val mainToolBar = findViewById<MaterialToolbar>(R.id.mainToolBar)
+
+        val homeImg = findViewById<ImageView>(R.id.home)
+        homeImg.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
+        }
 
         mainToolBar.setOnMenuItemClickListener{ menuItem ->
             when(menuItem.itemId) {
