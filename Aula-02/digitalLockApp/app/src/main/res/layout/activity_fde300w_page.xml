@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e6e6e6"
-    tools:context=".Fde600wPage" >
-
+    tools:context=".Fde300wPage">
 
     <com.google.android.material.appbar.MaterialToolbar
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -31,15 +30,6 @@
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fde600w_img" />
-
-    <ImageView
         android:id="@+id/imgFde300w"
         android:layout_width="350dp"
         android:layout_height="350dp"
@@ -56,7 +46,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FDE-600W"
+        android:text="FDE-300W"
         android:textColor="#444444"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -267,5 +257,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.343" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

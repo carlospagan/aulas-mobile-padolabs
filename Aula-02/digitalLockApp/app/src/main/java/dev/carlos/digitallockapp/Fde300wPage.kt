@@ -1,31 +1,16 @@
 package dev.carlos.digitallockapp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.cardview.widget.CardView
 import com.google.android.material.appbar.MaterialToolbar
 
-class MainActivity : AppCompatActivity() {
+class Fde300wPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_fde300w_page)
 
         val mainToolBar = findViewById<MaterialToolbar>(R.id.mainToolBar)
-        mainToolBar.setNavigationOnClickListener{
-            Toast.makeText(this,"Hamburguer Pressionado!!!",Toast.LENGTH_SHORT).show()
-        }
-
-        val fde600wCard = findViewById<CardView>(R.id.fde600wCard)
-        fde600wCard.setOnClickListener{
-            startActivity(Intent(this,Fde600wPage::class.java))
-        }
-
-        val fde300wCard = findViewById<CardView>(R.id.fde300wCard)
-        fde300wCard.setOnClickListener{
-            startActivity(Intent(this, Fde300wPage::class.java))
-        }
 
         mainToolBar.setOnMenuItemClickListener{ menuItem ->
             when(menuItem.itemId) {
@@ -40,9 +25,5 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
     }
-
-
-
 }

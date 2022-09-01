@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">digitalLockApp</string>
+
     <string name="o_mundo_cada_vez_mais_digital">O MUNDO\nCADA VEZ MAIS\n<b>DIGITAL</b></string>
+
     <string name="novidades">Novidades</string>
+
     <string name="produtos">Produtos</string>
+
+    <string name="fde_600_w_descricao">FECHADURA DIGITAL DE EMBUTIR A PROVA\nD\'ÁGUA E COM CONECTIVIDADE</string>
+
     <string name="fde_600_w_nome">FDE-600W</string>
-    <string name="fde_600_w_descricao">FECHADURA DIGITAL DE EMBUTIR A PROVA\nD'ÁGUA E COM CONECTIVIDADE</string>
+
     <string name="fde_600_w_preco">R$1500,00</string>
 </resources>
